@@ -1,7 +1,6 @@
 # sql-cheat-sheet&copy;
 
 ```
-
 heyo dummy,
 you're here because you forgot.
 You forgot how SQL works.
@@ -14,19 +13,16 @@ Strap on your helmet dum-dum.
 After PostgreSQL is installed, run the following command in your terminal:
 
 ```
-
 ~ $ psql
 psql (9.6.3)
 Type "help" for help.
 
 yourname=#
-
 ```
 if you get an error message that says 'Database does not exist'
 that means you don't have a user db created yet and you will have to run the following commands:
 
 ```
-
 ~ $ whoami
 'your name'
 ~ $ createdb your name
@@ -44,7 +40,6 @@ you can do <i>STUFF</i>.
 
 for example:
 ```
-
 -\dt
 	-(describes tables)
 -\l
@@ -61,7 +56,6 @@ See, thats the stuff.
 <sup>Richard was my fathers name, that was weird.</sup><br>
 if you were too drunk to remember what CRUD is:
 ```
-
 CREATE
 READ
 UPDATE
@@ -76,7 +70,6 @@ Before we create entries into the database table, we must know the value paramet
 Here is an example of a table with its keys and parameters:
 
 ```
-
 CREATE TABLE jabroni (
   id serial,
   name text,
@@ -106,7 +99,6 @@ so now that we know what the properties are and the value types of the data, WE 
 <sup><i>i still hate you for making me do this</sup></i>
 
 ```
-
 racecarpenter=# INSERT into jabroni VALUES(default, 'Fletcher Cove', 34, 2.5, 'Newport, Connecticut', true)
 ```
 awww what happened?
@@ -126,7 +118,6 @@ haha, you can't even read this.
 dummy.
 
 ```
-
 racecarpenter=# SELECT * from jabroni;
 ```
 this will give you all the entries with all the columns for that specific table.
@@ -143,7 +134,6 @@ if only you could read that.
 i'm getting bored:
 
 ```
-
 racecarpenter=# UPDATE jabroni SET age = 64, jabroni_rating = 10000 WHERE name = 'Richard';
 ```
 this would change any jabroni named Richards age to 64 and his jabroni rating to 10 thousand. what a mook.
@@ -153,7 +143,6 @@ this would change any jabroni named Richards age to 64 and his jabroni rating to
 oh idk, maybe try:
 
 ```
-
 racecarpenter=# DELETE from jabroni WHERE name='Fletcher Cove';
 ```
 pretty straightforward. you're deleting entries FROM the table JABRONI on entries WHERE the NAME is 'FLETCHER COVE' SEMI-COLON;
